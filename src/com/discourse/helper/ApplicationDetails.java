@@ -46,11 +46,6 @@ public class ApplicationDetails {
 
 	
 	
-//public static String unigramDictioanry   = "D:\\Uni-MS\\NLPTeamLabWorkSpace\\Data\\4K-Data\\Unigrams-4K.csv";
-	//public static String unigramDictioanry   = "D:\\Uni-MS\\Discourse\\my_paper\\Project\\3Class\\Unigrams.csv";
-	//public static String bigramDictioanry   = "D:\\Uni-MS\\Discourse\\my_paper\\Project\\3Class\\Bigrams.csv";
-	//public static String unigramDictioanry   = "D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\Unigrams.csv";
-	//public static String bigramDictioanry   = "D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\Bigrams.csv";
 
 	public static boolean class2 = true ;
 	public static boolean class3 = false;
@@ -61,6 +56,12 @@ public class ApplicationDetails {
 	public static boolean stem = false;
 	public static boolean TAG_FEATURE = false;
 	public static boolean Senti_Feature = true;
+	
+
+	
+	/**
+	 * Following lines for preprocessed data and not for stemmed data.
+	 */
 	
 	public static String unigramDictioanry_2   = "D:\\Uni-MS\\Discourse\\my_paper\\Project_Data\\2Class\\Normal\\Unigrams.csv";
 	public static String bigramDictioanry_2   = "D:\\Uni-MS\\Discourse\\my_paper\\Project_Data\\2Class\\Normal\\Bigrams.csv";
@@ -91,6 +92,12 @@ public class ApplicationDetails {
 	
 	public static String testFeatureWriteFile_2 = "D:\\Uni-MS\\Discourse\\my_paper\\Project_Data\\2Class\\Normal\\feature-test-model06";
 	public static String testFeatureWriteFile_3 = "D:\\Uni-MS\\Discourse\\my_paper\\Project_Data\\3Class\\Normal\\feature-test-model6";
+	
+	
+
+	/**
+	 * Following lines for stemmed data setup .
+	 */
 	
 	
 //	public static String unigramDictioanry_2   = "D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\StemmedData\\Unigrams.csv";
