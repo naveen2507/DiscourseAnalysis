@@ -3,6 +3,13 @@ import libsvm.*;
 import java.io.*;
 import java.util.*;
 
+import com.discourse.helper.ApplicationDetails;
+
+/**
+ * SVM Predict class 
+ * @author Naveen
+ *
+ */
 class svm_predict {
 	private static svm_print_interface svm_print_null = new svm_print_interface()
 	{
@@ -144,10 +151,22 @@ class svm_predict {
         	svm_print_string = svm_print_stdout;
 
             String argv[] = new String[3];
-            argv[0]="D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\feature-vector-test-svmformat-discourse.tsv";
-            argv[1]="D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\svm-model-train-discourse";
-            argv[2]="D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\out-feature-vector-test-svmformat-discourse.tsv";
-      
+//            argv[0]="D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\feature-vector-test-svmformat-discourse.tsv";
+//            argv[1]="D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\svm-model-train-discourse";
+//            argv[2]="D:\\Uni-MS\\Discourse\\my_paper\\Project\\2Class\\out-feature-vector-test-svmformat-discourse.tsv";
+            if(ApplicationDetails.class2){
+            	argv[0]=ApplicationDetails.testFeatureWriteFile_2;
+            	argv[1]=ApplicationDetails.modelFile_2;
+            	argv[2]=ApplicationDetails.testOutDataFile_2;
+                
+    		}else{
+    			argv[0]=ApplicationDetails.testFeatureWriteFile_3;
+    			argv[1]=ApplicationDetails.modelFile_3;
+    			argv[2]=ApplicationDetails.testOutDataFile_3;
+                
+    		}
+            
+            
         	
 		// parse options
 		for(i=0;i<argv.length;i++)

@@ -12,8 +12,17 @@ import java.util.Map;
 import com.discourse.helper.ApplicationDetails;
 import com.discourse.vo.TweetVO;
 
+/**
+ * Description : Preprocess data and shas function to get stemmed data
+ * @author Naveen
+ *
+ */
 public class Preprocessing {
 
+	/**
+	 * Read smiley dictionary
+	 * @return
+	 */
 	public Map<String, String> mapSmileyemotion() {
 		BufferedReader br;
 		String line;
@@ -36,7 +45,11 @@ public class Preprocessing {
 
 	}
 
-
+	/**
+	 * Get preprocessed tweet from tweet
+	 * @param tweet
+	 * @return
+	 */
 	public String getPreprocessedtweet(String tweet) {
 
 		// Map<String, String> smileyMap = mapSmileyemotion();
@@ -69,7 +82,12 @@ public class Preprocessing {
 		return preprocessedTweet;
 	}
 	
-	
+	/**
+	 * Read tweet file and get it in List<TweetVO> object
+	 * @param fileName
+	 * @return
+	 * @throws IOException
+	 */
 	public List<TweetVO> getListTweetVO(String fileName) throws IOException{
 		List<TweetVO> listTweetVO = new ArrayList<TweetVO>();
 		BufferedReader br;
@@ -131,7 +149,11 @@ public class Preprocessing {
 		
 	}
 	
-	
+	/**
+	 * Get Stemmed Tweet data in preprocessed file
+	 * @param arg
+	 * @throws IOException
+	 */
 	public static void main(String arg[]) throws IOException{
 		
 		FileWriter writer = new FileWriter("D:\\Uni-MS\\Discourse\\my_paper\\Project\\3Class\\StemmedData\\preprocessed-data.csv");

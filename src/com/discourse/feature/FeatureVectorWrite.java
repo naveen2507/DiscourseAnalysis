@@ -10,7 +10,12 @@ import java.util.Set;
 import com.discourse.data.Preprocessing;
 import com.discourse.helper.ApplicationDetails;
 import com.discourse.vo.TweetVO;
-
+/**
+ * Extract feature vector and write it in libsvm format
+ * label	tweetId	featureIndex:value featureIndex:value .....
+ * @author Naveen
+ *
+ */
 public class FeatureVectorWrite {
 
 	public static void main(String[] args) throws IOException {
@@ -87,8 +92,8 @@ public class FeatureVectorWrite {
 			}
 			
 			//featureWriter.append(tweetInstance.getGoldLabel());
-			//featureWriter.append("\t");
-			//featureWriter.append(tweetInstance.getTweetId());
+			featureWriter.append("\t");
+			featureWriter.append(tweetInstance.getTweetId());
 			
 			Map<String,Double> featureVector = tweetInstance.getFeatureVector(); 
 			for(String featureName : featureVector.keySet()){

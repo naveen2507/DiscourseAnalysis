@@ -1,6 +1,8 @@
 package com.discourse.feature;
 
-
+/**
+ * SVM Train data
+ */
 import libsvm.*;
 import java.io.*;
 import java.util.*;
@@ -131,8 +133,8 @@ class SVM_Train {
 		arg[6]= "-g";
 		arg[7]= "1";
 		
-		arg[8]= "-v";
-		arg[9]= "10";
+		arg[8]= "-t";
+		arg[9]= "0";
 		arg[10]= "-t";
 		arg[11]= "0";
 

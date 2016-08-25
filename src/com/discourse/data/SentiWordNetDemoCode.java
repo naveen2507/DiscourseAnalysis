@@ -24,9 +24,15 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Get SentiWordNet data for each instance of word and get a score thereby.
+ * @author Naveen
+ *
+ */
 public class SentiWordNetDemoCode {
 
 private Map<String, Double> dictionary;
+
 
 public SentiWordNetDemoCode(String pathToSWN) throws IOException {
 	// This is our main dictionary representation

@@ -10,6 +10,11 @@ import java.util.Map;
 
 import com.discourse.helper.Helper;
 
+/**
+ * Description : This class is for Bag of word extraction , that is Ngram extraction.
+ * @author Naveen
+ *
+ */
 
 public class BOWExtraction {
 

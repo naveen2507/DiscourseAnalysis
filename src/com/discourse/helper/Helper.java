@@ -14,7 +14,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-
+/**
+ * Read Ngram,Dtop Word ,and other dicctionaries 
+ * @author Naveen
+ *
+ */
 public class Helper {
 
 	private static Helper objHelper;

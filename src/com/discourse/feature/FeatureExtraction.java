@@ -16,7 +16,11 @@ import com.discourse.helper.Helper;
 import com.discourse.vo.TweetVO;
 
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-
+/**
+ * Get feature vector for each instance of TweetVO with different experimental setup of feature vectors
+ * @author Naveen
+ *
+ */
 public class FeatureExtraction {
 
 	public Set<String> featureNames = new LinkedHashSet<String>();
@@ -95,6 +99,12 @@ public class FeatureExtraction {
 		return lstFeatureTweetVO;
 	}
 
+	/**
+	 * Implementing discourse feature vector
+	 * @param tweet
+	 * @param featureVector
+	 * @throws IOException
+	 */
 	public void discourseFeature(String tweet, Map<String, Double> featureVector) throws IOException {
 //		String taggedTweet = tagger.tagString(tweet);	
 //		String wordTagList[] = taggedTweet.split(" ");

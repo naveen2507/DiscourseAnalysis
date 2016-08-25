@@ -8,7 +8,11 @@ import weka.classifiers.meta.CVParameterSelection;
 import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.Utils;
-
+/**
+ * Class to get optimized parameters for SVM learning.
+ * @author Naveen
+ *
+ */
 public class GridSearchSVM {
 
 		   public static void main(String[] args) throws Exception {
